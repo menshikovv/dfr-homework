@@ -1,6 +1,7 @@
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from .models import Advertisement
+from .permissions import IsAdvertisementCreator
 from .serializers import AdvertisementSerializer
 from .filters import AdvertisementFilter
 
